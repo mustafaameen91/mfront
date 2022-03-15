@@ -1,0 +1,76 @@
+$border-radius-root: 10px;
+$font-size-root: 17px;
+$btn-font-weight: 600;
+
+$primary-dark: #212529;
+$secondary-dark: #343a40;
+$accent-dark: #495057;
+$info-dark: #8ac4ff;
+$warning-dark: #ffd166;
+$error-dark: #ef476f;
+$success-dark: #06d6a0;
+
+// light colors
+$primary-light: #1d3557;
+$secondary-light: #f7f7f7;
+$accent-light: #ffeddb;
+$info-light: #8ac4ff;
+$warning-light: #ffd166;
+$error-light: #ef476f;
+$success-light: #06d6a0;
+
+$material-light: (
+   cards: $secondary-light,
+   "app-bar": $secondary-light,
+   "background": $accent-light,
+);
+
+$material-dark: (
+   cards: $secondary-dark,
+   "app-bar": $primary-dark,
+   "background": $accent-dark,
+);
+
+@import "~vuetify/src/styles/styles.sass";
+
+.v-application .elevation-6 {
+   box-shadow: 0 10px 25px 0 rgba($primary-dark, 0.25) !important;
+}
+
+.radius-1 {
+   border-radius: 10px !important;
+}
+.v-application--is-rtl .v-input__prepend-outer {
+   display: none !important;
+}
+
+.theme--light.v-list-item:not(.v-list-item--active):not(.v-list-item--disabled) {
+   color: #926c4b !important;
+}
+
+.v-list--dense .v-list-item,
+.v-list-item--dense {
+   min-height: 40px !important;
+   border-radius: 10px !important;
+}
+
+.v-application .justify-space-around {
+   justify-content: space-around !important;
+}
+
+.nav-icon {
+   width: 45px !important;
+}
+
+.v-application--is-rtl .v-list-item__action:first-child,
+.v-application--is-rtl .v-list-item__icon:first-child {
+   margin-left: 12px;
+}
+
+.v-list-item--link:before {
+   border-radius: 5px !important;
+}
+
+.nav-buttons {
+   margin: 0 5px;
+}
